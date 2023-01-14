@@ -17,7 +17,7 @@ function App() {
 
     // fetch response from API
     const messages = newChatLog.map((message) => message.message).join("/n");
-    const response = await fetch("http://localhost:3080/", {
+    const response = await fetch("https://localhost:3080/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
